@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Foodie</title>
+
+  </head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <div class="container">
+        <header>
+            <nav id="navbar">
+                <div class="logo"><span>Foodie</span></div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#order">Order</a></li>
+                </ul>
+            </nav>
+            <div id="mobile">
+                <div class="logo1"><span>Foodie</span></div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#order">Order</a></li>
+                </ul>
+            </div>
+            <div class="overlay">
+                <section id="home">
+                    <h1 class="h-primary">Welcome to Foodie</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                    <button class="btn">Order Now</button>
+                </section>
+            </div>
+        </header>
+        <div id="menu">
+            <div class="heading">
+                <h1>Menu</h1>
+                <h3>Today's Special</h3>
+            </div>
+            <div class="card">
+                <img
+                    src="png.1.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> 100 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit reiciendis nam non quia! Earum eveniet
+                        minus. Facilis explicabo natus nihil voluptatem eveniet pariatur.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="png.2.jpg"
+                    alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> 100 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing
+                        elit.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="png.3.jpg"
+                    alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> 100 </h5>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam facilis, magni
+                        consectetur necessitatibus.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="png.4.jpg"
+                    alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> 150 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="bg5.jpg.jpg"
+                    alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> 180 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae doloremque fugit sequi quidem
+                        eveniet?</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="bg4.jpg"
+                    alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lorem, ipsum.</h5>
+                        <h5 class="price"> 250 </h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus reiciendis nam non quia! Earum
+                        eveniet quia.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <h1 class="title">About us</h1>
+            <div class="about_row">
+                <div class="about_column">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aperiam id saepe
+                        natus tempore adipisci neque incidunt vel nam, distinctio, eos labore cupiditate assumenda
+                        doloremque. Assumenda illo delectus aliquid libero, quisquam vero facere molestias neque
+                        similique, aperiam dolores ex mollitia nobis nostrum blanditiis autem qui itaque quos, nisi
+                        dolore.</p>
+                    <button id="btn1">learn more</button>
+                </div>
+                <div class="about_column">
+                    <img src="https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png
+        " alt="">
+                </div>
+            </div>
+        </div>
+        <div id="order">
+            <h1 class="title1">Order</h1>
+            <form action="">
+                <input type="text" class="inp_box" placeholder="Name">
+                <input type="email" class="inp_box" placeholder="Email">
+                <textarea type="text" class="inp_box text_area" placeholder="Adress"></textarea>
+                <button class="btn2">Order Now</button>
+        </div>
+        </form>
+    </div>
+    <footer>
+        <div>
+            &copy;copyright 2024
+            <p>
+                Designed by Ankit Chouhan
+            </p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

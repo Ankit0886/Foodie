@@ -1,164 +1,1233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Foodie</title>
 
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD FUNDAY RESTAURANT</title>
+
+    <!-- aos css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.1"></script>
+
+</head>
+
 <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <div class="container">
-        <header>
-            <nav id="navbar">
-                <div class="logo"><span>Foodie</span></div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#order">Order</a></li>
-                </ul>
-            </nav>
-            <div id="mobile">
-                <div class="logo1"><span>Foodie</span></div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#order">Order</a></li>
-                </ul>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"><img src="logo3.png" alt=""></a>
+        <div id="menu-bar" class="fas fa-hamburger"></div>
+
+        <nav class="navbar">
+
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#popular">popular</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#book_section layout_padding">Book Table</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h1>Welcome <span>food</span> Lovers </h1>
+            <p>"Food is not Eating Energy, It's An Experience"</p>
+            <a href="#popular"><button class="btn1">get started</button></a>
+        </div>
+
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="image" data-aos="fade-right"></div>
+
+        <div class="content" data-aos="fade-left">
+            <h3>a word about us</h3>
+            <p>We Cook the best tasty food in the entire City,with excellent customer services, the best meals and at
+                the best price, visit us.</p>
+            <a href="#gallery"><button class="btn">Go Here</button></a>
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> our delicious <span>menu</span> </h1>
+
+        <ul class="list" data-aos="fade-down">
+            <li class="btn active"><a data-src="breakfast.jpg" href="#breakfast">breakfast</a></li>
+            <li class="btn"><a data-src="utaaa.jpg" href="#utaa">lunch</a></li>
+            <li class="btn"><a data-src="dinner.png" href="#dinner">dinner</a></li>
+            <li class="btn"><a data-src="d.jpeg" href="#dessert">dessert</a></li>
+        </ul>
+
+        <div class="row" data-aos="fade-right">
+
+            <div class="image" data-aos="fade-left">
+                <img src="breakfast.jpg" id="breakfast" alt="">
             </div>
-            <div class="overlay">
-                <section id="home">
-                    <h1 class="h-primary">Welcome to Foodie</h1>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                    <button class="btn">Order Now</button>
-                </section>
+
+            <div class="content">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Aloo Paratha</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹25</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Panner Paratha</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹30</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Gobi Paratha</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹30</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Plain Dosa</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹20</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Masala Dosa</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹30</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Neer Dosa</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹20</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Aloo Paratha</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹25</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Panner Paratha</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹30</h1>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <h2>Gobi Paratha</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹30</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Idaly</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹20</h1>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <h2>Vada</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹15</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Vada Pav</h2>
+                        </td>
+                        <td>
+                            <h1>.....................................₹25</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Veg Uttppa</h2>
+                        </td>
+                        <td>
+                            <h1> ....................................₹35</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Veg Sandwich</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹40</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Tea</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹10</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Coffee</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹15</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Cold Coffee</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹35</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Milk</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹15</h1>
+                        </td>
+                    </tr>
+
+                </table>
             </div>
-        </header>
-        <div id="menu">
-            <div class="heading">
-                <h1>Menu</h1>
-                <h3>Today's Special</h3>
+
+        </div>
+
+        <div class="row" data-aos="fade-right">
+
+            <div class="image" data-aos="fade-left">
+                <img src="lunch.jpg.jpg" id="utaa" alt="">
             </div>
-            <div class="card">
-                <img
-                    src="png.1.jpg">
-                <div class="details">
-                    <div class="details-sub">
-                        <h5>Lorem, ipsum.</h5>
-                        <h5 class="price"> 100 </h5>
-                    </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit reiciendis nam non quia! Earum eveniet
-                        minus. Facilis explicabo natus nihil voluptatem eveniet pariatur.</p>
-                    <button>Add To Cart</button>
+
+            <div class="content">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Butter Naan</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹70</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Plain Naan</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹50</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Tandoori Roti</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹100</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Tawa Roti</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹160</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Plain Rice</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹100</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Jeera Rice</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹150</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Ghee Rice</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹160</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Veg Fried Rice</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹200</h1>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <h2>Veg Birayani</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹200</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Tomato Soup</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹150</h1>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <h2>Veg Soup</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹50</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Hot and Sour Soup</h2>
+                        </td>
+                        <td>
+                            <h1>.....................................₹80</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Veg Manchurian Dry</h2>
+                        </td>
+                        <td>
+                            <h1> ....................................₹150</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Veg Sandwich</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹70</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Dal MaKahni</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹150</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Dal Punjabi Taka</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹170</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Panner Tikka</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹120</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Veg Roll</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹100</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Pizza</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹200</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Pizza Roll</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹180</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Gobi</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹120</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>French Fries</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹100</h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row" data-aos="fade-right">
+            <div class="image" data-aos="fade-left">
+                <img src="dinner.jpg.jpg" id="dinner" alt="">
+            </div>
+
+            <div class="content">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Kulcha</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹120</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Batter Roti</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹160</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Ghee Roti</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹150</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Tandoori Roti</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹150</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Gralic Naan</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹130</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Aloo Paratha</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹130</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Dal Fry</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹140</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Veg Kurma</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹130</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Veg Kalhapuri</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹150</h1>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <h2>Aloo Palak</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹140</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Plain Rice</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹100</h1>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <h2>Fried Rice</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹200</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Ghee Rice</h2>
+                        </td>
+                        <td>
+                            <h1>.....................................₹150</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Tomato Rice</h2>
+                        </td>
+                        <td>
+                            <h1> ....................................₹150</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Onion Chilly Rice</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹140</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Masala Papad</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹120</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Tomato soup</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹85</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Corn Soup</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹100</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Fruit Salad</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹70</h1>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+        <div class="row" data-aos="fade-right">
+            <div class="image" data-aos="fade-left">
+                <img src="dessert.jpg" id="dessert" alt="">
+            </div>
+
+            <div class="content">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Chocolate Cake</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹50</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Orea Pancake</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹120</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Chocolate Parfait</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹140</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Browie Ice-Cream</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹160</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Cafe Latte</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹180</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Cappucchino</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹200</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Vanilla Ice-Cream</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹120</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Chocolate Ice-Cream</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹120</h1>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <h2>Banoffpie</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹160</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Jelly</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹110</h1>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <h2>Green Tea</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹60</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Coffee</h2>
+                        </td>
+                        <td>
+                            <h1>.....................................$15</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Cold COffee</h2>
+                        </td>
+                        <td>
+                            <h1> ....................................$35</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Mango Crush</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹140</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Orange Crush</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹120</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Chocolate MilkShake</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹160</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Kitkat Shakes</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹180</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Orea Shakes</h2>
+                        </td>
+                        <td>
+                            <h1>....................................₹190</h1>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- popular section starts  -->
+
+    <section class="popular" id="popular">
+
+        <h1 class="heading"> most <span>popular</span> foods </h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-right">
+                <img src="Noodles.jpg" alt="">
+                <h3>Schezwan Fried Noodles</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
+                <div class="price">₹200.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="card">
-                <img src="png.2.jpg"
-                    alt="">
-                <div class="details">
-                    <div class="details-sub">
-                        <h5>Lorem, ipsum.</h5>
-                        <h5 class="price"> 100 </h5>
-                    </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing
-                        elit.</p>
-                    <button>Add To Cart</button>
+
+            <div class="box" data-aos="fade-left">
+                <img src="Kanti.jpg" alt="">
+                <h3>KantiSweets</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
+                <div class="price">₹250.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="card">
-                <img src="png.3.jpg"
-                    alt="">
-                <div class="details">
-                    <div class="details-sub">
-                        <h5>Lorem, ipsum.</h5>
-                        <h5 class="price"> 100 </h5>
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam facilis, magni
-                        consectetur necessitatibus.</p>
-                    <button>Add To Cart</button>
+
+            <div class="box" data-aos="fade-right">
+                <img src="pizza.jpg" alt="">
+                <h3>Pizza</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
+                <div class="price">₹200.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="card">
-                <img src="png.4.jpg"
-                    alt="">
-                <div class="details">
-                    <div class="details-sub">
-                        <h5>Lorem, ipsum.</h5>
-                        <h5 class="price"> 150 </h5>
-                    </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit</p>
-                    <button>Add To Cart</button>
+
+            <div class="box" data-aos="fade-left">
+                <img src="burger.png" alt="">
+                <h3>Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
+                <div class="price">₹180.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="card">
-                <img src="bg5.jpg.jpg"
-                    alt="">
-                <div class="details">
-                    <div class="details-sub">
-                        <h5>Lorem, ipsum.</h5>
-                        <h5 class="price"> 180 </h5>
-                    </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae doloremque fugit sequi quidem
-                        eveniet?</p>
-                    <button>Add To Cart</button>
+
+
+            <div class="box" data-aos="fade-right">
+                <img src="sandwich.jpg" alt="">
+                <h3>Sandwich</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
+                <div class="price">₹140.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="card">
-                <img src="bg4.jpg"
-                    alt="">
-                <div class="details">
-                    <div class="details-sub">
-                        <h5>Lorem, ipsum.</h5>
-                        <h5 class="price"> 250 </h5>
+
+            <div class="box" data-aos="fade-left">
+                <img src="soup.jpg" alt="">
+                <h3>Soup</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">₹50.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+
+            <div class="box" data-aos="fade-right">
+                <img src="gulab.jpg" alt="">
+                <h3>gulab jamun</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">₹50.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+                <img src="proll.jpg" alt="">
+                <h3>Pizaa Roll</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">₹120.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+
+
+            <div class="box" data-aos="fade-right">
+                <img src="fried.jpg" alt="">
+                <h3>Veg fried Rice</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">₹200.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+                <img src="allo.jpg" alt="">
+                <h3>Aloo tikki</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">₹130.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+
+            <div class="box" data-aos="fade-right">
+                <img src="potato.jpg" alt="">
+                <h3>Potato Twister</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">₹140.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+                <img src="salad.jpg" alt="">
+                <h3>Salad</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">₹100.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- popular section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading"> our food <span>gallery</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up">
+                <img src="Paneer.jpg" alt="">
+                <h3>Panner Manchurian</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="banner-2.png" alt="">
+                <h3>burger</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="pizza.jpg" alt="">
+                <h3>pizza</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="soup1.jpg" alt="">
+                <h3>soup</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="spring roll.jpg" alt="">
+                <h3>Spring Roll</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="noon.jpg" alt="">
+                <h3>Rice</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="momos.jpg" alt="">
+                <h3>Momos</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="ice cream.jpg" alt="">
+                <h3>Ice cream</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="ice.jpg" alt="">
+                <h3>Shakes</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="coffee.jpg" alt="">
+                <h3>Coffee</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="cold drinks.jpeg" alt="">
+                <h3>Juice</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="dessert.jpeg" alt="">
+                <h3>Cake</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- order section starts  -->
+
+    <section class="book_section layout_padding" id="book_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h1>
+                    Book A Table
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form_container">
+                        <form action="connect.php" method="post">
+                            <div>
+                                <input type="text" class="form-control" placeholder="Your Name" name="Your Name" />
+                            </div>
+                            <div>
+                                <input type="text" class="form-control" placeholder="Phone Number"
+                                    name="Phone Number" />
+                            </div>
+                            <div>
+                                <input type="email" class="form-control" placeholder="Your Email" name="Your Email" />
+                            </div>
+                            <div>
+                                <select class="form-control nice-select wide">
+                                    <option value="" disabled selected>
+                                        How many persons?
+                                    </option>
+                                    <option value="2">
+                                        2
+                                    </option>
+                                    <option value="3">
+                                        3
+                                    </option>
+                                    <option value="4">
+                                        4
+                                    </option>
+                                    <option value="5">
+                                        5
+                                    </option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="btn_box">
+                                <button>
+                                    Book Now
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus reiciendis nam non quia! Earum
-                        eveniet quia.</p>
-                    <button>Add To Cart</button>
                 </div>
             </div>
         </div>
-        <div id="about">
-            <h1 class="title">About us</h1>
-            <div class="about_row">
-                <div class="about_column">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aperiam id saepe
-                        natus tempore adipisci neque incidunt vel nam, distinctio, eos labore cupiditate assumenda
-                        doloremque. Assumenda illo delectus aliquid libero, quisquam vero facere molestias neque
-                        similique, aperiam dolores ex mollitia nobis nostrum blanditiis autem qui itaque quos, nisi
-                        dolore.</p>
-                    <button id="btn1">learn more</button>
+    </section>
+
+
+
+    <!-- order section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> contact <span>us</span> </h1><br>
+
+        <div class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>contact info</h3>
+                    <p> <i class="fas fa-map-marker-alt"></i> jaipur, 302017</p>
+                    <p> <i class="fas fa-envelope"></i> foodfunday@gmail.com </p>
+                    <p> <i class="fas fa-phone"></i> +91 9529932383 </p>
+                    <p> <i class="fas fa-phone"></i> +91 7073380886 </p>
                 </div>
-                <div class="about_column">
-                    <img src="https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png
-        " alt="">
+                <div class="box">
+                    <h3>branch location</h3>
+                    <a href="#">jaipur</a>
+                    <a href="#">Karnataka</a>
                 </div>
+                <div class="box">
+                    <h3>quick links </h3>
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">menu</a>
+                    <a href="#">popular</a>
+                    <a href="#">gallery</a>
+                    <a href="#">book table</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">instagram</a>
+                    <a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                    <a href="#">linkedin</a>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.940016234972!2d77.6035795146452!3d12.975688390853207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1687393dbc13%3A0x8b70c8e652b73d9e!2sMahatma%20Gandhi%20Rd%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1622212663733!5m2!1sen!2sin"
+                    width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
             </div>
-        </div>
-        <div id="order">
-            <h1 class="title1">Order</h1>
-            <form action="">
-                <input type="text" class="inp_box" placeholder="Name">
-                <input type="email" class="inp_box" placeholder="Email">
-                <textarea type="text" class="inp_box text_area" placeholder="Adress"></textarea>
-                <button class="btn2">Order Now</button>
-        </div>
-        </form>
+    </section>
+
+
     </div>
-    <footer>
-        <div>
-            &copy;copyright 2024
-            <p>
-                Designed by Ankit Chouhan
-            </p>
-        </div>
-    </footer>
-    </div>
+
+    <!-- contact section ends -->
+
+    <!-- aos js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+    <!-- initializing aos  -->
+
+    <script>
+
+        AOS.init({
+            delay: 400,
+            duration: 1000
+        })
+
+    </script>
+
 </body>
+
 </html>
